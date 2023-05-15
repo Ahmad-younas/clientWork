@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div id="inner-body-wrapper">
+        <header class="site-header">
+            <div class="flex-container">
+                <div class="site-header-logo">
+                    <img src="./assets/expertmarketlogo-white-1.png" alt="Logo">
+                </div>
+                <div class="site-header-awards">
+                    <ul class="site-header-awards-list">
+                        <li><img src="./assets//old-awards-deloitte-500@2x.png" alt="Growing Business" width="31" height="25">  </li>
+                        <li><img src="./assets/awards-100-best@2x.png" alt="Best Companies" width="25" height="25"></li>
+                        <li><img src="./assets/awards-track-100@2x.png" alt="European Business Awards" width="40" height="25"></li>
+                        <li><img src="./assets/awards-queeen@2x.png" alt="The Queen award for enterprise" width="21" height="25"></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="Container">
+            <div class="parent-form container">
+                <div class="progress-containers">
+                    <div class="progress-bars"></div>
+                  </div>
+                   
+                    <form id="form1">
+                        <div class="question">
+                            <h2>Do you currently have a website?</h2>
+                        </div>
+                        <div class="comparing">
+                            <p>Save On Digital Marketing By Comparing Quotes</p>
+                        </div>
+                        <input type="text" id="name" name="name" placeholder="Enter your name">
+                        <button class="btnNext" type="button">Next</button>
+                    </form>
+                      
+                    <form id="form2" style="display: none;">
+                        <div class="question">
+                            <h2>Which marketing channel(s) do you wish to use?</h2>
+                        </div>
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                        <button class="btnNext" type="button">Next</button>
+                    </form>
+
+
+                    <form id="form3" style="display: none;">
+                        <div class="question">
+                            <h2> Great, and what are you looking to do?</h2>
+                        </div>
+                        <input type="password" name="password" placeholder="Enter your password">
+                        <button class="btnNext" type="button">Next</button>
+                    </form>
+
+
+                    <form id="form4" style="display: none;">
+                        <div class="question">
+                            <h2> When do you want to start your campaigns?</h2>
+                        </div>
+                        <input type="age" name="age" placeholder="Enter your age">
+                        <button class="btnNext" type="button">Next</button>
+                    </form>
+                      
+                    <form id="form5"  style="display: none;">
+                        <div class="question">
+                            <h2>How long has your business been trading for?</h2>
+                        </div>
+                        <input type="tel" name="phone" placeholder="Enter your phone number">
+                        <button class="btnNext" type="button">Next</button>
+                    </form>
+
+                    <form id="form6" style="display: none;">
+                        <div class="question">
+                            <h2>Thanks, and what is your postcode?</h2>
+                        </div>
+                        <div class="comparing">
+                            <p>Your postcode ensures quotes are as accurate as possible for your area</p>
+                        </div>
+                        <input type="tel" name="phone" placeholder="Enter your phone number">
+                        <button class="btnNext" type="button">Next</button>
+                    </form>
+
+
+                    <form id="form7" style="display: none;">
+                        <div class="question">
+                            <h2>What is your email address?</h2>
+                        </div>
+                        <div class="comparing">
+                            <p>Almost there, just a couple more details to enter.</p>
+                        </div>
+                        <input type="tel" name="phone" placeholder="Enter your phone number">
+                        <button class="btnNext" type="button">Next</button>
+                    </form>
+
+
+                    <form id="form8" style="display: none;">
+                        <div class="question">
+                            <h2>What is your full name?</h2>
+                        </div>
+                        <input type="tel" name="phone" placeholder="Enter your phone number">
+                        <button class="btnNext" type="button">Next</button>
+                    </form>
+
+
+                    <form id="form9" style="display: none;">
+                        <div class="question">
+                            <h2>And the name of your company?</h2>
+                        </div>
+                        <input type="tel" name="phone" placeholder="Enter your phone number">
+                        <button class="btnNext" type="button">Next</button>
+                    </form>
+
+
+                    <form id="form10" style="display: none;">
+                        <div class="question">
+                            <h2>What is your telephone number?</h2>
+                        </div>
+                        <div class="comparing">
+                            <p>Last step!</p>
+                        </div>
+                        <input type="tel" name="phone" placeholder="Enter your phone number">
+                        <button class="btnNext" type="submit">Next</button>
+                    </form>
+                      
+        </section>
+        <!-- <div class="form-container">
+            <form id="form1">
+              <h2>Form 1</h2>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+              <button type="button" class="next-btn" data-next="form2">Next</button>
+            </form>
+            <form id="form2">
+              <h2>Form 2</h2>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              <button type="button" class="next-btn" data-next="form3">Next</button>
+            </form>
+            <form id="form3">
+              <h2>Form 3</h2>
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" required>
+              <button type="submit">Submit</button>
+            </form>
+            <div class="progress-containers">
+              <div class="progress-bars"></div>
+            </div>
+          </div>
+          
+    </div> -->
+
+
+    <form id="my-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="Name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit" id="sub" >Submit</button>
+    </form>
+    <script>
+             const FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdOS-tu0WzFnjRmJIhvQPyYL-ej97WujsSBlZHKpJ0eaD85DA/viewform";
+
+                        // Replace "FORM_ID" with your Google Form ID
+                        const FORM_ID = "1FAIpQLSdOS-tu0WzFnjRmJIhvQPyYL-ej97WujsSBlZHKpJ0eaD85DA";
+
+                        document.getElementById("my-form").addEventListener("submit", async (e) => {
+                        e.preventDefault();
+                        const formData = new FormData(e.target);
+                        const response = await fetch(FORM_URL, {
+                            method: "POST",
+                            mode: 'no-cors',
+                            header:'Access-Control-Allow-Origin: *',
+                            header:'Access-Control-Allow-Credentials: true',
+                            body: formData
+                        });
+                        console.log("dfdsffsf");
+                        const formResponse = await response.text();
+                        console.log(formResponse);
+                       // const formId = new URLSearchParams(new DOMParser().parseFromString(formResponse, "text/html").querySelector('form').getAttribute('action')).get("formkey");
+                        const scriptUrl = `https://script.google.com/macros/s/AKfycbzbW773p42Iu7BN1wAEYYGabRxdLundsLsp0c3q4OOi-R-1kDA7BCIRUSfeuILn3O-0Ww/exec?formId=${FORM_ID}&formResponse=${encodeURIComponent(formResponse)}`;
+                        console.log("qazwsxedcrfvgtg");
+                        const scriptResponse = await fetch(scriptUrl);
+                        console.log(scriptRespone);
+                        const scriptText = await scriptResponse.text();
+                        console.log("SCriptText");
+                        // window.location.href = "https://www.example.com/thank-you.html";
+            });
+    </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+    <!-- <script>
+        const forms = document.querySelectorAll('form');
+        const nextBtns = document.querySelectorAll('.next-btn');
+        const progressBar = document.querySelector('.progress-bars');
+
+        let currentForm = 0;
+
+        nextBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            forms[currentForm].style.display = 'none';
+            currentForm++;
+            forms[currentForm].style.display = 'block';
+            progressBar.style.width = (currentForm + 1) * 33.33 + '%';
+        });
+        });
+
+    </script> -->
+
+<script>
+    // const forms = document.querySelectorAll('form');
+    // const btnNext = document.querySelectorAll('.btnNext');
+    // const progressBar = document.querySelector('.progress-bars');
+    // let currentForm = 0;
+
+    // console.log("fdghhjk0",btnNext);
+
+    // let myArray = [1, 2, 3];
+    // btnNext.forEach((btn)=>{
+    //     console.log("jhshbjfhbvjsfhvs");
+    //  btn.addEventListener('click',()=>{
+    //     forms[currentForm].style.display = 'none';
+    //     console.log("formNumber",forms[currentForm]);
+    //     getvalue(forms[currentForm]);
+    //     currentForm++;
+    //     forms[currentForm].style.display = 'block';
+    //     progressBar.style.width = (currentForm+1) * 9 + '%';
+    //  })
+    // });
+ 
+//     function getvalue(forms){
+//         const Forms = document.querySelectorAll('form');
+// // loop through the forms
+//   // select all the input fields within the form
+//   const inputs = forms.querySelectorAll('input');
+//   console.log("Input",inputs);
+//   let values = {email:"",name:""};
+//   // loop through the input fields and get their values
+//   inputs.forEach(input => {
+//      myArray.push( input.value);
+    
+//     console.log("id",myArray);
+//   });
+//     }
+
+
+
+// When the first Next button is clicked, hide the first form and show the second form
+// btnNext1.addEventListener('click', function() {
+//   form1.style.display = 'none';
+//   form2.style.display = 'block';
+// });
+
+// // When the second Next button is clicked, hide the second form and show the third form
+// btnNext2.addEventListener('click', function() {
+//   form2.style.display = 'none';
+//   form3.style.display = 'block';
+// });
+// btnNext3.addEventListener('click', function() {
+//   form3.style.display = 'none';
+//   form4.style.display = 'block';
+// });
+// btnNext4.addEventListener('click', function() {
+//   form4.style.display = 'none';
+//   form5.style.display = 'block';
+// });
+// btnNext5.addEventListener('click', function() {
+//   form5.style.display = 'none';
+//   form6.style.display = 'block';
+// });
+// btnNext6.addEventListener('click', function() {
+//   form6.style.display = 'none';
+//   form7.style.display = 'block';
+// });
+// btnNext7.addEventListener('click', function() {
+//   form7.style.display = 'none';
+//   form8.style.display = 'block';
+// });
+// btnNext8.addEventListener('click', function() {
+//   form8.style.display = 'none';
+//   form9.style.display = 'block';
+// });
+// btnNext9.addEventListener('click', function() {
+//   form9.style.display = 'none';
+//   form10.style.display = 'block';
+// });
+
+// // When the form is submitted, do something with the data
+// form10.addEventListener('submit', function(event) {
+//   event.preventDefault(); // Prevent the form from submitting normally
+
+// console.log("sdadfsdfsdfswe");
+//   // Get the data from the form
+//   const name = form1.elements.name.value;
+//   const email = form2.elements.email.value;
+//   const password = form3.elements.password.value;
+//   console.log("qazwsxedcrfvtgbyhn");
+
+//   // Do something with the data (e.g. send it to a server)
+//    console.log(`Name: ${name}, Email: ${email}, Password ${password}`);
+
+//   // Reset the forms
+//   form1.reset();
+//   form2.reset();
+//   form3.reset();
+//   form4.reset();
+//   form5.reset();
+//   form6.reset();
+//   form7.reset();
+//   form8.reset();
+//   form9.reset();
+//   form10.reset();
+//   form1.style.display = 'block';
+//   form2.style.display = 'none';
+//   form3.style.display = 'none';
+//   form4.style.display = 'none';
+//   form5.style.display = 'none';
+//   form6.style.display = 'none';
+//   form7.style.display = 'none';
+//   form8.style.display = 'none';
+//   form9.style.display = 'none';
+//   form10.style.display = 'none';
+
+// });
+</script>
+
+</body>
+</html>
